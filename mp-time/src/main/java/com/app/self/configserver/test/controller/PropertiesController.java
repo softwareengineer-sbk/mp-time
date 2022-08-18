@@ -22,7 +22,7 @@ public class PropertiesController {
     @GetMapping(value = "/properties", produces = MediaType.APPLICATION_JSON)
     public String getPropertyDetails() throws JsonProcessingException {
         ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
-        Properties properties = new Properties(serverConfiguration.getAppMsg());
+        Properties properties = new Properties(serverConfiguration.getMsg());
         return ow.writeValueAsString(properties);
     }
 }

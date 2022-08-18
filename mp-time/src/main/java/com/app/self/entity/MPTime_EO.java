@@ -18,4 +18,16 @@ public class MPTime_EO {
     private String asr;
     private String maghrib;
     private String isha;
+
+    public MPTime_EO() {
+    }
+
+    public MPTime_EO(Integer mosqueId, String fajr, String dhuhr, String asr, String maghrib, String isha) {
+        this.mosqueId = mosqueId;
+        this.fajr = fajr;
+        this.dhuhr = dhuhr;
+        this.asr = asr;
+        this.maghrib = maghrib;
+        this.isha = isha;
+    }
 }

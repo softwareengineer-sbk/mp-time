@@ -23,7 +23,7 @@ public class MPTimeController {
         return mpTimeService.getMPTime(mosqueId);
     }
 
-    @PostMapping(value = "/updateTime/{mosqueId}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/setTime/{mosqueId}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> updateMPTime(@RequestBody MPTime mpTime,  @PathVariable int mosqueId){
         log.info("Method: {}; request body: {}; parameter mosqueId: {}", "updateMPTime", mpTime, mosqueId);
         return mpTimeService.updateMPTime(mpTime, mosqueId);

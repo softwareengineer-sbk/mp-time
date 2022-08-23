@@ -4,8 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 
 import javax.persistence.*;
-@Getter
-@Builder
+@Getter @Builder
 @Entity(name = "MPTIME")
 public class MPTime_EO {
 
